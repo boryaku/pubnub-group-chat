@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Copyright (c) Pure Source, LLC All rights reserved.
+ *
+ * This library is free software; you can redistribute it and/or modify it under
+ * the terms of the GNU Lesser General Public License as published by the Free
+ * Software Foundation; either version 2.1 of the License, or (at your option)
+ * any later version.
+ *
+ * This library is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more
+ * details.
+ */
+--><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.ps</groupId>
+    <artifactId>pubnub-group-chat</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>PubNub Group Chat</name>
+  
+    <properties>
+        <springframework.version>3.0.5.RELEASE</springframework.version>
+        <spring.security.version>3.0.5.RELEASE</spring.security.version>
+    
+        <hibernate.version>3.6.0.Final</hibernate.version>
+        <hibernate.validator.version>4.1.0.Final</hibernate.validator.version>
+
+        <liferay.version>6.0.5</liferay.version>
+
+        <context.root>/pubnub-group-chat</context.root>
+    </properties>
+
+
+  <modules>
+    <module>java</module>
+    <module>webapp</module>
+  </modules>
+</project>

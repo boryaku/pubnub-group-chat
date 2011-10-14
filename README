@@ -1,0 +1,33 @@
+/**
+ * Copyright (c) Pure Source, LLC All rights reserved.
+ *
+ * This library is free software; you can redistribute it and/or modify it under
+ * the terms of the GNU Lesser General Public License as published by the Free
+ * Software Foundation; either version 2.1 of the License, or (at your option)
+ * any later version.
+ *
+ * This library is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more
+ * details.
+ */
+
+This Portlet allows Liferay users 6.0.5 and above (I wrote it against 6.1) to have a Group Chat client that uses PubNub as the messaging service.
+The portlet maintains independent channels per page and uses the group name and the page the portlet is on to create a unique channel,
+I used this instead of the primary keys so we can support clustering.
+
+The porlet displays the users name and the user's profile picture in the chat window associated to their corresponding chat message.
+The portlet has a configuration setup page where you put in your Pub and Sub keys and you can optionally tell the portlet to secure the channel.
+The portlet will run out of the box but it's using the demo/demo "chat" channel for PubNub so please sign up and configure the portlet.
+Also note that you will need to configure each portlet  this was intentional as you can have multiple Accounts with PubNub and you can have
+multiple Organizations with Liferay so it made sense to leave it this way.
+
+
+To Build the Portlet you will need Maven http://maven.apache.org/
+
+Once you have Maven you then simply type "mvn install" and in the webapp/target directory you will have the war file
+to deploy to Liferay.
+
+Here's instructions on installing and configuring the Portlet.
+http://www.puresrc.com/wiki/-/wiki/Main/PubNub+Group+Chat
+
