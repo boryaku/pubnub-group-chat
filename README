@@ -29,5 +29,6 @@ Once you have Maven you then simply type "mvn install" and in the webapp/target 
 to deploy to Liferay.
 
 Here's instructions on installing and configuring the Portlet.
-http://www.puresrc.com/wiki/-/wiki/Main/PubNub+Group+Chat
+
+http://www.puresrc.com/web/guest/knowledge
 
